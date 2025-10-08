@@ -1,71 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mik Mak Menu</title>
+  <title>Menuja e Delisht</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fff8f0;
-      color: #333;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #00a86b;
+      color: white;
       text-align: center;
-      padding: 20px;
+      padding: 20px 0;
     }
+
     h1 {
-      color: #b33b00;
+      margin: 0;
+      font-size: 2em;
     }
+
     .menu {
-      max-width: 400px;
-      margin: 0 auto;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
     }
+
     .item {
-      border-bottom: 1px solid #eee;
-      padding: 10px 0;
+      padding: 20px;
+      border-bottom: 1px solid #e0e0e0;
+      transition: background 0.3s;
     }
-    .item:last-child {
-      border-bottom: none;
+
+    .item:hover {
+      background-color: #e6fffa;
     }
+
     .item h3 {
       margin: 0;
-      color: #444;
+      color: #008f5a;
     }
+
     .item p {
       margin: 5px 0;
-      color: #777;
+      color: #555;
+    }
+
+    .price {
+      color: #ff6600;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      background-color: #e0f7ea;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>🍲 Mik Mak Menu</h1>
+  <header>
+    <h1>Menuja e Delisht 🍽️</h1>
+    <p>Shije tradicionale & moderne</p>
+  </header>
+
   <div class="menu">
     <div class="item">
-      <h3>Lakror me Spinaq</h3>
-      <p>Traditional layered pie with spinach and herbs.</p>
-      <p><strong>Price:</strong> 250 Lek</p>
+      <h3>Supë Pule</h3>
+      <p>Supë e lehtë me perime të freskëta.</p>
+      <p class="price">200 Lek</p>
     </div>
 
     <div class="item">
-      <h3>Byrek me Djathë</h3>
-      <p>Classic Albanian cheese pie, crispy and warm.</p>
-      <p><strong>Price:</strong> 200 Lek</p>
+      <h3>Pasta me Krem dhe Kërpudha</h3>
+      <p>Pasta e bërë vetë me krem dhe kërpudha.</p>
+      <p class="price">350 Lek</p>
     </div>
 
     <div class="item">
-      <h3>Pispili</h3>
-      <p>Cornbread with leeks and a touch of olive oil.</p>
-      <p><strong>Price:</strong> 180 Lek</p>
+      <h3>Fileto Pule me Oriz</h3>
+      <p>Fileto pule e pjekur me aromë limoni dhe erëza.</p>
+      <p class="price">400 Lek</p>
     </div>
 
     <div class="item">
-      <h3>Petanik</h3>
-      <p>Homemade layered dough baked to perfection.</p>
-      <p><strong>Price:</strong> 220 Lek</p>
+      <h3>Trileçe</h3>
+      <p>Ëmbëlsirë e butë me qumësht dhe karamel.</p>
+      <p class="price">250 Lek</p>
     </div>
   </div>
+
+  <footer>
+    <p>© 2025 Delisht Restaurant. Të gjitha të drejtat e rezervuara.</p>
+  </footer>
 </body>
 </html>
